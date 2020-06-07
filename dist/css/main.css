@@ -1,3 +1,19 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 1s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 1s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+
 * {
   box-sizing: border-box; }
 
@@ -9,7 +25,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../dist/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -58,7 +74,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 2.5s ease-out; }
+        transition: all 1s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
